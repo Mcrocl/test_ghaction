@@ -17,4 +17,4 @@ ENV PYTHONPATH "/app"
 RUN chmod u+x /app/test.py
 WORKDIR /app
 
-CMD ["python", "./app/test.py"]
+ENTRYPOINT ["python", "/app/test.py"]
