@@ -15,5 +15,6 @@ RUN pip install --target=/app pytest
 #WORKDIR /app
 ENV PYTHONPATH "/app"
 RUN chmod u+x /app/test.py
-RUN cd /app 
+WORKDIR /app
+
 CMD ["python", "./app/test.py"]
