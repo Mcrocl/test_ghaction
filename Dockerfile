@@ -16,4 +16,4 @@ RUN pip install --target=/app pytest
 ENV PYTHONPATH "/app"
 RUN chmod u+x /app/test.py
 
-ENTRYPOINT ["./app/test.py"]
+CMD ["python", "./app/test.py"]
