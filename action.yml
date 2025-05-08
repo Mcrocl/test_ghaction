@@ -1,7 +1,5 @@
 name: 'gh-gl_sync'
 description: 'Trigger sync script after new repository is created under NOAA-GFDL organization.'
-outputs:
-    description: 'Completed'
 runs:
   using: 'docker'
   image: 'Dockerfile'
